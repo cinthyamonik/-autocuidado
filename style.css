@@ -1,99 +1,151 @@
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #faf6f6;
-    color: #4a4a4a;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+body {
+    background-color: #fcf6f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 
 header {
+    background-color: #f7d6d0;
     text-align: center;
-    padding: 40px 20px;
-    background-color: #ffeef2;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    color: #4a3b32;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #6b5b52;
+    font-size: 1.1rem;
 }
 
 
-main {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 0 20px;
+.container-principal {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
 }
 
 
 .card-conteudo {
-    background: #ffffff;
+    background-color: #ffffff;
     border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    display: flex;
     overflow: hidden;
-    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex; /* Alinha imagem e texto lado a lado */
+    flex-direction: row;
 }
 
 
 .container-imagem {
     flex: 1;
-    min-width: 40%;
-    height: 350px;
+    min-width: 300px;
 }
 
 .img-destaque {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
-}
+    object-fit: cover;
+
 
 .textos {
-    flex: 1.5;
-    padding: 30px;
+    flex: 1.2; 
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
+.textos h2 {
+    color: #4a3b32;
+    margin-bottom: 1rem;
+}
+
+.textos p, .textos h3 {
+    margin-bottom: 1rem;
+    color: #555;
+}
 
 .dicas-list {
     list-style: none;
-    padding: 0;
+    margin-bottom: 1.5rem;
 }
 
 .dicas-list li {
-    margin-bottom: 12px;
-    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
 }
 
 
 .interactive-section {
-    margin-top: 20px;
+    display: flex;
+    gap: 1rem;
+    margin-top: auto; 
 }
 
 button {
-    background-color: #f0f0f0;
+    padding: 0.6rem 1.2rem;
     border: none;
-    padding: 8px 16px;
     border-radius: 20px;
     cursor: pointer;
-    margin-right: 10px;
-    transition: 0.2s;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+    background-color: #f0f0f0;
 }
 
 button:hover {
-    background-color: #ffeef2;
+    transform: scale(1.03);
 }
 
+.btn-like:hover {
+    background-color: #e1f5fe;
+    color: #0288d1;
+}
+
+.btn-dislike:hover {
+    background-color: #ffebee;
+    color: #d32f2f;
+}
+
+
 footer {
+    background-color: #4a3b32;
+    color: #fcf6f5;
     text-align: center;
-    padding: 20px;
-    background-color: #4a4a4a;
-    color: white;
-    font-size: 14px;
+    padding: 1.5rem 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
 }
 
 
 @media (max-width: 768px) {
     .card-conteudo {
-        flex-direction: column;
+        flex-direction: column; /* Transforma o card em coluna no celular */
     }
+
     .container-imagem {
-        width: 100%;
-        height: 200px;
+        height: 250px;
     }
+}
 }

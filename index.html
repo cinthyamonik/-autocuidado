@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cantinho do Autocuidado e Moda</title>
+  
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <h1>🌸 Cantinho do Autocuidado</h1>
         <p>Pequenos hábitos diários ajudam a manter a mente calma e a energia renovada.</p>
     </header>
 
-    <main>
-     
+    <main class="container-principal">
+      
         <article class="card-conteudo">
             <div class="container-imagem">
                 <img src="images (1).jpg" alt="Pessoa meditando no pôr do sol" class="img-destaque">
@@ -28,49 +28,51 @@
                     <li>🌿 <strong>Movimento Leve:</strong> Faça um alongamento rápido pela manhã.</li>
                 </ul>
                 <div class="interactive-section">
-                    <button class="btn-like">👍 Gostei <span>0</span></button>
-                    <button class="btn-dislike">👎 Não Gostei <span>0</span></button>
+                    <button class="btn-like">👍 Gostei (<span>0</span>)</button>
+                    <button class="btn-dislike">👎 Não Gostei (<span>0</span>)</button>
                 </div>
             </div>
         </article>
 
+        
         <article class="card-conteudo">
             <div class="container-imagem">
                 <img src="imagens.arara.webp" alt="Arara com roupas em tons neutros" class="img-destaque">
             </div>
             <div class="textos">
                 <h2>👗 Moda, Conforto & Estilo</h2>
-                <p>Vestir-se bem é uma forma de expressão e afeto por você mesma. Descubra como montar looks práticos e elegantes.</p>
+                <p>Vestir-se bem é uma forma de expressão e afeto por você mesma.</p>
                 <h3>Dicas Rápidas de Estilo:</h3>
                 <ul class="dicas-list">
-                    <li>🎨 <strong>Armário Cápsula:</strong> Invista em peças coringa de cores neutras (branco, preto, bege e jeans) que combinam entre si.</li>
-                    <li>✨ <strong>O Poder dos Acessórios:</strong> Um colar, cinto ou lenço simples pode transformar um look básico instantaneamente.</li>
-                    <li>Sneaker <strong>Conforto em Primeiro Lugar:</strong> Moda e bem-estar andam juntos. Escolha calçados confortáveis para o seu dia a dia.</li>
-                    <li>🧥 <strong>Terceira Peça:</strong> Adicionar um blazer, jaqueta ou cardigan traz mais informação de moda ao visual sem esforço.</li>
+                    <li>🎨 <strong>Armário Cápsula:</strong> Peças coringa de cores neutras que combinam entre si.</li>
+                    <li>✨ <strong>O Poder dos Acessórios:</strong> Um colar ou cinto pode transformar um look básico.</li>
+                    <li>👟 <strong>Conforto:</strong> Escolha calçados confortáveis para o seu dia a dia.</li>
+                    <li>🧥 <strong>Terceira Peça:</strong> Adicionar um blazer ou cardigan traz mais informação de moda.</li>
                 </ul>
                 <div class="interactive-section">
-                    <button class="btn-like">👍 Gostei <span>0</span></button>
-                    <button class="btn-dislike">👎 Não Gostei <span>0</span></button>
+                    <button class="btn-like">👍 Gostei (<span>0</span>)</button>
+                    <button class="btn-dislike">👎 Não Gostei (<span>0</span>)</button>
                 </div>
             </div>
         </article>
 
+       
         <article class="card-conteudo">
             <div class="container-imagem">
-                <img src="maquiagem.jpg" alt="Produtos de maquiagem e pincéis organizados para o dia a dia" class="img-destaque">
+                <img src="maquiagem.jpg" alt="Produtos de maquiagem e pincéis organizados" class="img-destaque">
             </div>
             <div class="textos">
                 <h2>💄 Maquiagem: Passo a Passo Simples</h2>
                 <p>Uma rotina prática para realçar sua beleza natural sem complicação.</p>
                 <ul class="dicas-list">
-                    <li>🧼 <strong>1. Preparação:</strong> Lave bem o rosto e aplique um bom hidratante e protetor solar.</li>
-                    <li>👁️ <strong>2. Correção:</strong> Use corretivo nas olheiras e manchinhas de forma pontual.</li>
-                    <li>☀️ <strong>3. Cor:</strong> Aplique um blush cremoso nas maçãs do rosto para um ar saudável.</li>
-                    <li>💋 <strong>4. Finalização:</strong> Use uma máscara de cílios e termine com um lip tint ou gloss nos lábios.</li>
+                    <li>🧼 <strong>1. Preparação:</strong> Lave bem o rosto e aplique hidratante e protetor solar.</li>
+                    <li>👁️ <strong>2. Correção:</strong> Use corretivo nas olheiras de forma pontual.</li>
+                    <li>☀️ <strong>3. Cor:</strong> Aplique um blush cremoso nas maçãs do rosto.</li>
+                    <li>💋 <strong>4. Finalização:</strong> Use uma máscara de cílios e termine com um lip tint ou gloss.</li>
                 </ul>
                 <div class="interactive-section">
-                    <button class="btn-like">👍 Gostei <span>0</span></button>
-                    <button class="btn-dislike">👎 Não Gostei <span>0</span></button>
+                    <button class="btn-like">👍 Gostei (<span>0</span>)</button>
+                    <button class="btn-dislike">👎 Não Gostei (<span>0</span>)</button>
                 </div>
             </div>
         </article>
@@ -81,23 +83,9 @@
         <p>© Site de Autocuidado & Moda — Feito com carinho</p>
     </footer>
 
-    <script>
-        const botoes = document.querySelectorAll("button");
-        botoes.forEach(function (botao) {
-            let curtiu = false;
-            botao.addEventListener("click", botaoClicado);
-            function botaoClicado() {
-                console.log("fui clicado");
-                let texto = botao.querySelector("span");
-                if (curtiu === false){
-                    texto.textContent++;
-                    curtiu = true;
-                } else {
-                    texto.textContent--;
-                    curtiu = false;
-                }
-            }
-        });
+   
+    <script src="script.js">
+
     </script>
 </body>
 </html>
