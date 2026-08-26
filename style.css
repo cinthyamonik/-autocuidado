@@ -18,6 +18,10 @@ main {
 article {
     display: flex;
 }
+.breathing-section {
+    text-align: center;
+    margin: 30px 0;
+}
 
 img {
     width: 150px;
