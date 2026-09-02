@@ -4,7 +4,7 @@
     --cor-fundo:#E481A1;
     --cor-texto: #FFFFFF;
     --cor-contraste:#93cbec;
-    --cor-botao:#fcf6f5;
+    --cor-botao:#57aef5;
 }
 
  *{ transition :backgroud-color- 0.8s ease;
@@ -30,8 +30,8 @@ header {
 }
 
 main {
-    background-color:#F4ACB7;
-    color: #0a0607;
+    background-color:var(--cor-fundo);
+    color: var(--cor-contraste)
     max-width: 900px;
     margin: 0 auto;
     padding: 16px;
@@ -51,8 +51,8 @@ img {
 }
 
 footer {
-    background-color: #f1aab7;
-    color: #240b1a;
+    background-color:var(--cor-segundaria);
+    color:var(--cor-contraste);
     text-align: center;
     padding: 1.5rem 1rem;
     margin-top: auto;
