@@ -1,6 +1,6 @@
 :root{
     --cor-primaria:#db708e;
-    --cor-segundaria:#F4ACB7;
+    --cor-segundaria:#f192a0;
     --cor-fundo:#E481A1;
     --cor-texto: #FFFFFF;
     --cor-contraste:#93cbec;
@@ -31,7 +31,7 @@ header {
 
 main {
     background-color:var(--cor-fundo);
-    color: var(--cor-contraste)
+    color: var(--cor-contraste);
     max-width: 900px;
     margin: 0 auto;
     padding: 16px;
