@@ -1,13 +1,23 @@
 :root{
-    --cor-primaria:#7c2846;
+    --cor-primaria:#ca567f;
     --cor-segundaria:#E481A1;
     --cor-fundo:#E481A1;
     --cor-texto: #FFFFFF;
     --cor-contraste:#C96984;
     --cor-botao:#fcf6f5;
 }
+{
+    transition:backgroud-color- 0.8s ease;
+}
+.tema-escuro{
+    --cor-primaria:#E56B6F;
+    --cor-segundaria:#B56576;
+    --cor-fundo:#F26A8D;
+    --cor-texto:#33415C;
+    --cor-contraste:#DD2D4A;
+    --cor-botao:#CBEEF3;
 
-
+}
 header {
     background-color:#7c2846;
     color: #FFFFFF;
