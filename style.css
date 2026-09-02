@@ -1,5 +1,5 @@
 header {
-    background-color:#880D1E;
+    background-color:#FF99BD;
     color: #FFFFFF;
     text-align: center;
     max-width: 900px;
@@ -8,7 +8,7 @@ header {
 }
 
 main {
-    background-color: #eb7589;
+    background-color: #E481A1;
     color: #0a0607;
     max-width: 900px;
     margin: 0 auto;
@@ -29,7 +29,7 @@ img {
 }
 
 footer {
-    background-color: #F26A8D;
+    background-color: #C96984;
     color: #fcf6f5;
     text-align: center;
     padding: 1.5rem 1rem;
