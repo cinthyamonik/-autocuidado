@@ -7,8 +7,10 @@
     --cor-botao:#fcf6f5;
 }
 {
-    transition:backgroud-color- 0.8s ease;
+  transition :backgroud-color- 0.8s ease;
+
 }
+
 .tema-escuro{
     --cor-primaria:#E56B6F;
     --cor-segundaria:#B56576;
