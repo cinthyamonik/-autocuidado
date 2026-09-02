@@ -3,7 +3,7 @@
     --cor-segundaria:#F4ACB7;
     --cor-fundo:#E481A1;
     --cor-texto: #FFFFFF;
-    --cor-contraste:#C96984;
+    --cor-contraste:#93cbec;
     --cor-botao:#fcf6f5;
 }
 
@@ -16,13 +16,13 @@
     --cor-segundaria:#3b1230;
     --cor-fundo:#A8458E;
     --cor-texto:#BDE0FE;
-    --cor-contraste:#B64D9B;
+    --cor-contraste:#7174f8;
     --cor-botao:#A2D2FF;
 
 }
 header {
-    background-color:#9D8189;
-    color: #FFFFFF;
+    background-color:var(--cor-primaria);
+    color:var(--cor-contraste);
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
